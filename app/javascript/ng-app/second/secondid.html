@@ -1,0 +1,27 @@
+<h1>List MyDatas</h1>
+<table id="my-datas-table">
+  <thead>
+    <tr>
+      <th>String Test</th>
+      <th>Integer Test</th>
+      <th>Boolean Test</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+    <!-- All & Update -->
+    <tr>
+      <td><input type="text" [(ngModel)]="myDatas[id].string_test"></td>
+      <td><input type="number" [(ngModel)]="myDatas[id].integer_test"></td>
+      <td><input type="checkbox" [(ngModel)]="myDatas[id].boolean_test">boolean_test</td>
+      <td>
+        <button (click)="update(myData.id, myData.string_test, myData.integer_test, myData.boolean_test)">
+          Update
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
